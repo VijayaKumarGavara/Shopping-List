@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="note.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="note.png" alt="logo" srcset="">
+            <h1>Shopping List</h1>
+        </div>
+        <div class="form-group">
+            <input type="text" id="form-item" placeholder="Enter Item">
+            <button id="add">+Add Item</button>
+            <input type="text" id="search" placeholder="Filter Item">
+        </div>
+        <div class="item-container">
+            <div class="item">
+                <div class="item-name">Rice</div>
+                <button class="delete-btn">x</button>
+            </div>
+            <div class="item">
+                <div class="item-name">Water</div>
+                <button class="delete-btn">x</button>
+            </div>
+            <div class="item">
+                <div class="item-name">Vegetables</div>
+                <button class="delete-btn">x</button>
+            </div>
+            <div class="item">
+                <div class="item-name">Milk</div>
+                <button class="delete-btn">x</button>
+            </div>
+        </div>
+        <button class="clear-btn">Clear All</button>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="note.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="note.png" alt="logo">
+            <h1>Shopping List</h1>
+        </div>
+        <div class="form-group">
+            <input type="text" id="form-item" placeholder="Enter Item" required>
+            <button id="add" type="submit">+ Add Item</button>
+            <input type="text" id="search" placeholder="Filter Items" required>
+        </div>
+        <div class="item-container" id="item-list">
+            <!-- Items will be dynamically added here -->
+        </div>
+        <button class="clear-btn" id="clear">Clear All</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

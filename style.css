@@ -1,0 +1,253 @@
+/* html{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:35vw;
+    padding: 20px;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow:2px 5px rgb(137, 142, 142) ;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    gap:20px
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group #form-item{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form-group button{
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.form-group #search{
+    padding: 10px;
+    margin: 10px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.clear-btn{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #676464;
+    cursor: pointer;
+}
+.item-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.item{
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: space-between;
+    height: 8vh;
+}
+.item .item-name{
+    font-weight: 700;
+    padding-left: 15px;
+    font-size: 1rem;
+    
+    display: flex;
+    align-items: center;
+}
+.item .delete-btn{
+    color:red;
+    border:none;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding-right: 10px;
+} */
+/* Global Styles */
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw; 
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 5px rgb(137, 142, 142);
+    margin: 50px auto;
+}
+
+/* Title Section */
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.title img {
+    max-width: 40px;
+}
+
+/* Responsive Title for Small Screens */
+@media (max-width: 400px) {
+    .title {
+        flex-direction: column;
+    }
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group input,
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Search Input with Bottom Border */
+.form-group #search {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Items Container */
+.item-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Two Columns Layout for Larger Screens */
+@media (min-width: 600px) {
+    .item-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Individual Item */
+.item {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px;
+}
+
+.item .item-name {
+    font-weight: 700;
+    padding-left: 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.item .delete-btn {
+    color: red;
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+/* Clear Button */
+.clear-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #676464;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+    .container {
+        width: 95vw;
+        padding: 15px;
+    }
+    
+    .item {
+        height: auto;
+        padding: 10px;
+    }
+}
